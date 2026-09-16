@@ -54,4 +54,3 @@ st.divider()
 st.header("5. 그래프 제목")
 
 st.caption("이 그래프로 알 수 있는 것: (한 문장으로 적어 보세요)")
-
