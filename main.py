@@ -17,7 +17,7 @@ weekday_names = [
     "일요일",
 ]
 
-# pandas의 weekday는 월요일=0, 일요일=6입니다.
+# 월요일=0, 일요일=6
 heatmap_df["요일"] = heatmap_df["날짜"].dt.weekday.map(
     dict(enumerate(weekday_names))
 )
@@ -63,11 +63,6 @@ fig5.update_layout(
 )
 
 st.plotly_chart(fig5, width="stretch")
-
-st.caption(
-    "이 그래프로 알 수 있는 것: (한 문장으로 적어 보세요)"
-)
-
 
 st.caption(
     "이 그래프로 알 수 있는 것: (한 문장으로 적어 보세요)"
